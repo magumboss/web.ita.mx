@@ -38,3 +38,5 @@ RUN chown root:root -R /var/www/html/*
 RUN chown root:root -R /var/www/html/
 RUN chmod 755 -R /var/www/html/*
 RUN chmod 755 -R /var/www/html/
+RUN chmod 700 -R /var/www/html/media/joomlashine/jsn-gruve/custom-html/backgroundmaster/*
+RUN chmod 700 -R /var/www/html/media/joomlashine/jsn-gruve/custom-html/backgroundmaster/
