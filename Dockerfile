@@ -30,7 +30,7 @@ COPY web.zip.part1ao .
 COPY web.zip.part1ap .
 COPY web.zip.part1aq .
 COPY web.sql .
-RUN cat web.zip.part1* | web.zip
+RUN cat web.zip.part1* > web.zip
 RUN unzip web.zip -d /var/www/html
 RUN chown root:root -R /var/www/html/*
 RUN chown root:root -R /var/www/html/
