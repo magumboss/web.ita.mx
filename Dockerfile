@@ -32,6 +32,8 @@ COPY web.zip.part1aq .
 COPY web.sql .
 RUN cat web.zip.part1* > web.zip
 RUN unzip web.zip -d /var/www/html
+RUN rm -rf web.zip
+RUN rm -rf web.zip.part1*
 RUN chown root:root -R /var/www/html/*
 RUN chown root:root -R /var/www/html/
 RUN chmod 755 -R /var/www/html/*
